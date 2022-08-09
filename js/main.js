@@ -31,6 +31,7 @@
         }
     });
 
+
     
     
 
@@ -53,6 +54,20 @@
         $(".humberger__menu__wrapper").removeClass("show__humberger__menu__wrapper");
         $(".humberger__menu__overlay").removeClass("active");
         $("body").removeClass("over_hid");
+    });
+
+
+    //Cart Menu
+    $(".cart__open").on('click', function () {
+        $(".cart__menu__wrapper").addClass("show__cart__menu__wrapper");
+        $(".cart__menu__overlay").addClass("active");
+        $("body").addClass("over_hiden");
+    });
+
+    $(".cart__menu__overlay").on('click', function () {
+        $(".cart__menu__wrapper").removeClass("show__cart__menu__wrapper");
+        $(".cart__menu__overlay").removeClass("active");
+        $("body").removeClass("over_hiden");
     });
 
     /*------------------
