@@ -25,7 +25,7 @@
     background: #dd2222;
 }
 ::-webkit-scrollbar {
-    width: 6px;
+    width: 8px;
     height: 2px;
 }
 ::-webkit-scrollbar-thumb {
@@ -33,7 +33,7 @@
     box-shadow: inset 0 0 6px rgb(0 0 0 / 50%);
 }
 ::-webkit-scrollbar-thumb {
-    background: #dd2222;
+    background: linear-gradient(119deg, #dd2222, transparent 85%);
 }
 ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 6px rgb(0 0 0 / 30%);
@@ -765,6 +765,31 @@ ol {
 	color: #fff;
 }
 
+/* Menu Bottom */
+.menu-bottom .col{
+	min-width: 0;
+	flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+}
+.menu-bottom span{
+	font-size: 10px;
+	font-weight: 600;
+}
+.gutters-5 {
+	margin-right: -5px;
+	margin-left: -5px;
+}
+.cart-menu{
+	width: 50px;
+    height: 50px;
+    margin-top: -33px;
+    box-shadow: 0px -5px 10px rgb(0 0 0 / 15%);
+    border: 4px solid #fff !important;
+    background: #dd2222;
+    color: #fff;
+	position: relative;
+}
 /*---------------------
   Hero
 -----------------------*/
@@ -2279,9 +2304,10 @@ ol {
 }
 
 .primary-btn.cart-btn {
-	color: #6f6f6f;
+	color: #dd2222;
 	padding: 14px 30px 12px;
 	background: #f5f5f5;
+	border: 1px solid;
 }
 
 .primary-btn.cart-btn span {
@@ -2320,9 +2346,11 @@ ol {
 
 .shoping__discount form button {
 	padding: 15px 30px 11px;
-	font-size: 12px;
-	letter-spacing: 4px;
-	background: #6f6f6f;
+    font-size: 12px;
+    letter-spacing: 4px;
+    background: #f9c7cc;
+    border: 1px solid #dd2222;
+    color: #dd2222;
 }
 
 .shoping__checkout {
@@ -2689,7 +2717,7 @@ ol {
 }
 
 .blog__sidebar__item ul li a:hover {
-	color: #7fad39;
+	color: #dd2222;
 }
 
 .blog__sidebar__search {
@@ -2909,7 +2937,7 @@ ol {
 }
 
 .blog__details__widget .blog__details__social a:hover {
-	color: #7fad39;
+	color: #dd2222;
 }
 
 .blog__details__widget .blog__details__social a:last-child {
@@ -3280,7 +3308,7 @@ ol {
 		margin-bottom: 25px;
 	}
 	.humberger__open {
-		display: block;
+		/* display: block;
 		font-size: 22px;
 		color: #1c1c1c;
 		height: 35px;
@@ -3291,7 +3319,7 @@ ol {
 		cursor: pointer;
 		position: absolute;
 		right: 15px;
-		top: 22px;
+		top: 22px; */
 	}
 	.header .container {
 		position: relative;
@@ -3560,7 +3588,7 @@ ol {
 		overflow: hidden;
 		margin-bottom: 25px;
 	}
-	.cart__open, .humberger__open {
+	/* .cart__open {
 		display: block;
 		font-size: 22px;
 		color: #1c1c1c;
@@ -3573,7 +3601,7 @@ ol {
 		position: absolute;
 		right: 15px;
 		top: 22px;
-	}
+	} */
 	.header .container {
 		position: relative;
 	}
