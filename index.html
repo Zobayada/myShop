@@ -34,7 +34,7 @@
     <div class="humberger__menu__overlay"></div>
     <div class="humberger__menu__wrapper">
         <div class="humberger__menu__logo">
-            <a href="#">my<span>Shop</span></a>
+            <h2>my<b class="text-danger">Shop</b><b>.</b></h2>
         </div>
         <div class="humberger__menu__cart">
             <ul>
@@ -54,7 +54,87 @@
                 </ul>
             </div>
             <div class="header__top__right__auth">
-                <a href="#"><i class="fa fa-user"></i> Login</a>
+                <button type="button" id="click" class="btn" data-toggle="modal" data-target="#exampleModal2" onclick="myFunction()">
+                    <a href="#"><i class="fa fa-user"></i>Signup/Login</a>
+                  </button>
+                  
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog box modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Welcome to myShop! Please login.</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="row">
+                              <div class="col-md-12">
+                                  <div class="col-md-6 left">
+                                      <label>Phone Number or Email <badge class="text-danger">*</badge></label>
+                                      <input type="text" placeholder="Enter Your Phone Number or Email"> <br> <br>
+                                      <label>Password <badge class="text-danger">*</badge></label>
+                                      <input type="number" placeholder="Enter Your Password">
+                                  </div>
+                                  <div class="col-md-6 right">
+                                      <button class="btn btn-warning">LOGIN</button>
+                                      <button class="btn btn-primary mt-2">FACEBOOK</button>
+                                      <button class="btn btn-danger mt-2">GOOGLE</button>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer text-center">
+                            <h5>New Member ? <button type="button" class="btn modal-btn" data-toggle="modal" data-target="#exampleModal3">
+                                <a href="#">Register Here</a>
+                              </button>
+                              
+                              <!-- Modal -->
+                              <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog box1 modal-dialog-centered" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel">Create Your myShop Account</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <div class="row">
+                                          <div class="col-md-12">
+                                              <div class="col-md-6 left">
+                                                <label>Full Name <badge class="text-danger">*</badge></label>
+                                                <input type="text" placeholder="Enter Your Full Name"> <br> <br>
+                                                  <label>Phone Number <badge class="text-danger">*</badge></label>
+                                                  <input type="number" placeholder="Enter Your Phone Number"> <br> <br>
+                                                  <label>Password <badge class="text-danger">*</badge></label>
+                                                  <input type="password" placeholder="Enter Your Password">
+                                              </div>
+                                              <div class="col-md-6 right">
+                                                  <button class="btn btn-outline-warning">SIGNUP</button>
+                                                  <p class="mb-0 mt-1">Or</p>
+                                                  <button class="btn btn-warning mt-2">Signup With EMAIL</button>
+                                                  <button class="btn btn-primary mt-2">Signup With FACEBOOK</button>
+                                                  <button class="btn btn-danger mt-2">Signup With GOOGLE</button>
+                                              </div>
+                                          </div>
+                                      </div>
+                                    </div>
+                                    <div class="modal-footer text-center">
+                                        <h5>All Ready Have an Account ? <button type="button" class="btn modal-btn">
+                                            <a href="index.html">Login Here</a>
+                                          </button></h5>
+                                      
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
             </div>
         </div>
         <nav class="humberger__menu__nav mobile-menu">
@@ -88,6 +168,16 @@
         </div>
     </div>
     <!-- Humberger End -->
+
+    <!-- Cart Begin -->
+    <div class="cart__menu__overlay"></div>
+    <div class="cart__menu__wrapper">
+        <div class="humberger__menu__logo">
+            <h2>my<b class="text-danger">Shop</b><b>.</b></h2>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+    </div>
+    <!-- Cart End -->
 
     <!-- Header Section Begin -->
     <header class="header">
@@ -127,32 +217,90 @@
                             </div>
                             
                             <div class="header__top__right__auth">
+                                
+                            <!-- Button trigger modal -->
                                 <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
                                     <a href="#"><i class="fa fa-user"></i>Signup/Login</a>
                                   </button>
                                   
                                   <!-- Modal -->
                                   <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog" role="document">
+                                    <div class="modal-dialog box modal-dialog-centered" role="document">
                                       <div class="modal-content">
                                         <div class="modal-header">
-                                          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                          <h5 class="modal-title" id="exampleModalLabel">Welcome to myShop! Please login.</h5>
                                           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
                                           </button>
                                         </div>
                                         <div class="modal-body">
-                                          ...
+                                          <div class="row">
+                                              <div class="col-md-12">
+                                                  <div class="col-md-6 left">
+                                                      <label>Phone Number or Email <badge class="text-danger">*</badge></label>
+                                                      <input type="text" placeholder="Enter Your Phone Number or Email"> <br> <br>
+                                                      <label>Password <badge class="text-danger">*</badge></label>
+                                                      <input type="number" placeholder="Enter Your Password">
+                                                  </div>
+                                                  <div class="col-md-6 right">
+                                                      <button class="btn btn-warning">LOGIN</button>
+                                                      <button class="btn btn-primary mt-2">FACEBOOK</button>
+                                                      <button class="btn btn-danger mt-2">GOOGLE</button>
+                                                  </div>
+                                              </div>
+                                          </div>
                                         </div>
-                                        <div class="modal-footer">
-                                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                          <button type="button" class="btn btn-primary">Save changes</button>
+                                        <div class="modal-footer text-center">
+                                            <h5>New Member ? <button type="button" class="btn modal-btn" data-toggle="modal" data-target="#exampleModal1">
+                                                <a href="#">Register Here</a>
+                                              </button>
+                                              
+                                              <!-- Modal -->
+                                              <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog box1 modal-dialog-centered" role="document">
+                                                  <div class="modal-content">
+                                                    <div class="modal-header">
+                                                      <h5 class="modal-title" id="exampleModalLabel">Create Your myShop Account</h5>
+                                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                      </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                      <div class="row">
+                                                          <div class="col-md-12">
+                                                              <div class="col-md-6 left">
+                                                                <label>Full Name <badge class="text-danger">*</badge></label>
+                                                                <input type="text" placeholder="Enter Your Full Name"> <br> <br>
+                                                                  <label>Phone Number <badge class="text-danger">*</badge></label>
+                                                                  <input type="number" placeholder="Enter Your Phone Number"> <br> <br>
+                                                                  <label>Password <badge class="text-danger">*</badge></label>
+                                                                  <input type="password" placeholder="Enter Your Password">
+                                                              </div>
+                                                              <div class="col-md-6 right">
+                                                                  <button class="btn btn-outline-warning">SIGNUP</button>
+                                                                  <p class="mb-0 mt-1">Or</p>
+                                                                  <button class="btn btn-warning mt-2">Signup With EMAIL</button>
+                                                                  <button class="btn btn-primary mt-2">Signup With FACEBOOK</button>
+                                                                  <button class="btn btn-danger mt-2">Signup With GOOGLE</button>
+                                                              </div>
+                                                          </div>
+                                                      </div>
+                                                    </div>
+                                                    <div class="modal-footer text-center">
+                                                        <h5>All Ready Have an Account ? <button type="button" class="btn modal-btn">
+                                                            <a href="index.html">Login Here</a>
+                                                          </button></h5>
+                                                      
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                          
                                         </div>
                                       </div>
                                     </div>
                                   </div>
                             </div>
-                            <!-- Button trigger modal -->
 
                         </div>
                     </div>
@@ -168,8 +316,8 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-3"></div>
-                <div class="col-lg-6">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-7">
                     <nav class="header__menu">
                         <ul>
                             <li class="active"><a href="./index.html">Home</a></li>
@@ -237,7 +385,7 @@
                                 <div class="header__cart">
                                     <ul>
                                         <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
-                                        <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
+                                        <li class="cart__open"><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -809,8 +957,8 @@
             //Preloader
             Royal_Preloader.config({
                 mode           : 'logo',
-                logo           : 'img/logo.png',
-                logo_size      : [200, 350],
+                logo           : 'img/logo.jpg',
+                logo_size      : [300, 450],
                 showProgress   : true,
                 showPercentage : true,
                 text_colour: '#000000',
