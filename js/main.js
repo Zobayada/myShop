@@ -10,10 +10,22 @@
 'use strict';
 
 function cartClose() {
-         $(".cart__menu__wrapper").removeClass("show__cart__menu__wrapper");
-        $(".cart__menu__overlay").removeClass("active");
-        $("body").removeClass("over_hiden");
-    }
+    $(".cart__menu__wrapper").removeClass("show__cart__menu__wrapper");
+    $(".cart__menu__overlay").removeClass("active");
+    $("body").removeClass("over_hiden");
+}
+
+function close() {
+    $(".humberger__menu__wrapper").removeClass("show__humberger__menu__wrapper");
+    $(".humberger__menu__overlay").removeClass("active");
+    $("body").removeClass("over_hid");
+} 
+
+function myFunction() {
+    $(".humberger__menu__wrapper").removeClass("show__humberger__menu__wrapper");
+    $(".humberger__menu__overlay").removeClass("active");
+    $("body").removeClass("over_hid");
+}
 
 (function ($) {
 
@@ -55,7 +67,7 @@ function cartClose() {
         $(".humberger__menu__overlay").addClass("active");
         $("body").addClass("over_hid");
 
-         $(".cart__menu__wrapper").removeClass("show__cart__menu__wrapper");
+        $(".cart__menu__wrapper").removeClass("show__cart__menu__wrapper");
         $(".cart__menu__overlay").removeClass("active");
         $("body").removeClass("over_hiden");
 
