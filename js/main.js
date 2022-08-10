@@ -15,7 +15,7 @@ function cartClose() {
     $("body").removeClass("over_hiden");
 }
 
-function close() {
+function menuClose() {
     $(".humberger__menu__wrapper").removeClass("show__humberger__menu__wrapper");
     $(".humberger__menu__overlay").removeClass("active");
     $("body").removeClass("over_hid");
