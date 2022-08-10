@@ -575,7 +575,17 @@ ol {
 .humberger__open {
 	display: none;
 }
-
+.humberger__menu__logo h2{
+	display: inline-block;
+}
+.close{
+	font-size: 30px;
+    color: #dd2222;
+    display: inline-block;
+	margin-top: -35px;
+	cursor: pointer;
+	opacity: 1;
+}
 /* Cart */
 .cart__open{
 	display: none;
