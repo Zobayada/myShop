@@ -119,6 +119,11 @@ ol {
 	margin: 0;
 }
 
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow:none;
+}
+
 /*---------------------
   Helper CSS
 -----------------------*/
@@ -328,6 +333,21 @@ ol {
 	.header__top__right__torder:after {
 		display: none;
 	}
+	.header__top__right__language:after{
+		display: none;
+	}
+}
+@media(min-width: 992px){
+	.header__top__right__language:after {
+		position: absolute;
+		right: -21px;
+		top: 1px;
+		height: 20px;
+		width: 1px;
+		background: #000000;
+		opacity: 0.1;
+		content: "";
+	}
 }
 
 .header__top__right__torder a {
@@ -352,17 +372,6 @@ ol {
 	top: 23px;
 	opacity: 1;
 	visibility: visible;
-}
-
-.header__top__right__language:after {
-	position: absolute;
-	right: -21px;
-	top: 1px;
-	height: 20px;
-	width: 1px;
-	background: #000000;
-	opacity: 0.1;
-	content: "";
 }
 
 .header__top__right__language img {
@@ -3362,7 +3371,7 @@ ol {
 		position: fixed;
 		left: -300px;
 		top: 0;
-		height: 580px;
+		height: calc(100% - 65px);
 		overflow-y: auto;
 		z-index: 99;
 		padding: 30px;
@@ -3643,7 +3652,7 @@ ol {
 		position: fixed;
 		left: -300px;
 		top: 0;
-		height: 100%;
+		height: calc(100% - 65px);
 		overflow-y: auto;
 		z-index: 99;
 		padding: 30px;

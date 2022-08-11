@@ -31,14 +31,17 @@
     <div class="humberger__menu__wrapper">
         <div class="humberger__menu__logo">
             <h2>my<b class="text-danger">Shop</b><b>.</b></h2>
+            <div class="close d-lg-none" onclick="menuClose()">
+                <i class="fa fa-remove"></i>
+            </div>
         </div>
-        <div class="humberger__menu__cart">
+        <!-- <div class="humberger__menu__cart">
             <ul>
                 <li><a href="#"><i class="fa fa-heart"></i> <span>1</span></a></li>
                 <li><a href="#"><i class="fa fa-shopping-bag"></i> <span>3</span></a></li>
             </ul>
             <div class="header__cart__price">item: <span>$150.00</span></div>
-        </div>
+        </div> -->
         <div class="humberger__menu__widget">
             <div class="header__top__right__language">
                 <img src="img/language.png" alt="">
@@ -48,89 +51,6 @@
                     <li><a href="#">Spanis</a></li>
                     <li><a href="#">English</a></li>
                 </ul>
-            </div>
-            <div class="header__top__right__auth">
-                <button type="button" id="click" class="btn" data-toggle="modal" data-target="#exampleModal2" onclick="myFunction()">
-                    <a href="#"><i class="fa fa-user"></i>Signup/Login</a>
-                  </button>
-                  
-                  <!-- Modal -->
-                  <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog box modal-dialog-centered" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">Welcome to myShop! Please login.</h5>
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div>
-                        <div class="modal-body">
-                          <div class="row">
-                              <div class="col-md-12">
-                                  <div class="col-md-6 left">
-                                      <label>Phone Number or Email <badge class="text-danger">*</badge></label>
-                                      <input type="text" placeholder="Enter Your Phone Number or Email"> <br> <br>
-                                      <label>Password <badge class="text-danger">*</badge></label>
-                                      <input type="number" placeholder="Enter Your Password">
-                                  </div>
-                                  <div class="col-md-6 right">
-                                      <button class="btn btn-warning">LOGIN</button>
-                                      <button class="btn btn-primary mt-2">FACEBOOK</button>
-                                      <button class="btn btn-danger mt-2">GOOGLE</button>
-                                  </div>
-                              </div>
-                          </div>
-                        </div>
-                        <div class="modal-footer text-center">
-                            <h5>New Member ? <button type="button" class="btn modal-btn" data-toggle="modal" data-target="#exampleModal3">
-                                <a href="#">Register Here</a>
-                              </button>
-                              
-                              <!-- Modal -->
-                              <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog box1 modal-dialog-centered" role="document">
-                                  <div class="modal-content">
-                                    <div class="modal-header">
-                                      <h5 class="modal-title" id="exampleModalLabel">Create Your myShop Account</h5>
-                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                      </button>
-                                    </div>
-                                    <div class="modal-body">
-                                      <div class="row">
-                                          <div class="col-md-12">
-                                              <div class="col-md-6 left">
-                                                <label>Full Name <badge class="text-danger">*</badge></label>
-                                                <input type="text" placeholder="Enter Your Full Name"> <br> <br>
-                                                  <label>Phone Number <badge class="text-danger">*</badge></label>
-                                                  <input type="number" placeholder="Enter Your Phone Number"> <br> <br>
-                                                  <label>Password <badge class="text-danger">*</badge></label>
-                                                  <input type="password" placeholder="Enter Your Password">
-                                              </div>
-                                              <div class="col-md-6 right">
-                                                  <button class="btn btn-outline-warning">SIGNUP</button>
-                                                  <p class="mb-0 mt-1">Or</p>
-                                                  <button class="btn btn-warning mt-2">Signup With EMAIL</button>
-                                                  <button class="btn btn-primary mt-2">Signup With FACEBOOK</button>
-                                                  <button class="btn btn-danger mt-2">Signup With GOOGLE</button>
-                                              </div>
-                                          </div>
-                                      </div>
-                                    </div>
-                                    <div class="modal-footer text-center">
-                                        <h5>All Ready Have an Account ? <button type="button" class="btn modal-btn">
-                                            <a href="index.html">Login Here</a>
-                                          </button></h5>
-                                      
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                          
-                        </div>
-                      </div>
-                    </div>
-                  </div>
             </div>
         </div>
         <nav class="humberger__menu__nav mobile-menu">
@@ -195,10 +115,10 @@
                 </a>
             </div>
             <div class="col">
-                <a href="#" class="text-reset d-block text-center pb-2 pt-3">
+                <button type="button" id="click" class="btn text-reset d-block text-center pb-2 pt-3" data-toggle="modal" data-target="#exampleModal2" onclick="myFunction()">
                     <i class="fa fa-user-plus"></i>
-                    <span class="d-block">Account</span>
-                </a>
+                    <span class="d-block" >Account</span>
+                </button>
             </div>
         </div>
     </div>
@@ -212,6 +132,7 @@
                 <a href="#"><i class="fa fa-shopping-bag text-danger"></i></a>
             </div>
             <span class="cart-item-count">0 ITEMS</span>
+            <span class="cart-close" onclick="cartClose()">CLOSE</span>
         </div>
         <div class="cart-body">
             <div class="cart-order-item">
@@ -794,6 +715,86 @@
         </div>
     </footer>
     <!-- Footer Section End -->
+
+    <!-- Account Modal Start -->
+    
+    <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog box modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Welcome to myShop! Please login.</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="col-md-6 left">
+                          <label>Phone Number or Email <badge class="text-danger">*</badge></label>
+                          <input type="text" placeholder="Enter Your Phone Number or Email"> <br> <br>
+                          <label>Password <badge class="text-danger">*</badge></label>
+                          <input type="number" placeholder="Enter Your Password">
+                      </div>
+                      <div class="col-md-6 right">
+                          <button class="btn btn-warning">LOGIN</button>
+                          <button class="btn btn-primary mt-2">FACEBOOK</button>
+                          <button class="btn btn-danger mt-2">GOOGLE</button>
+                      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="modal-footer text-center">
+                <h5>New Member ? <button type="button" class="btn modal-btn" data-toggle="modal" data-target="#exampleModal3">
+                    <a href="#">Register Here</a>
+                  </button>
+                  
+                  <!-- Modal -->
+                  <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog box1 modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Create Your myShop Account</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <div class="row">
+                              <div class="col-md-12">
+                                  <div class="col-md-6 left">
+                                    <label>Full Name <badge class="text-danger">*</badge></label>
+                                    <input type="text" placeholder="Enter Your Full Name"> <br> <br>
+                                      <label>Phone Number <badge class="text-danger">*</badge></label>
+                                      <input type="number" placeholder="Enter Your Phone Number"> <br> <br>
+                                      <label>Password <badge class="text-danger">*</badge></label>
+                                      <input type="password" placeholder="Enter Your Password">
+                                  </div>
+                                  <div class="col-md-6 right">
+                                      <button class="btn btn-outline-warning">SIGNUP</button>
+                                      <p class="mb-0 mt-1">Or</p>
+                                      <button class="btn btn-warning mt-2">Signup With EMAIL</button>
+                                      <button class="btn btn-primary mt-2">Signup With FACEBOOK</button>
+                                      <button class="btn btn-danger mt-2">Signup With GOOGLE</button>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="modal-footer text-center">
+                            <h5>All Ready Have an Account ? <button type="button" class="btn modal-btn">
+                                <a href="index.html">Login Here</a>
+                              </button>
+                            </h5>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Account Modal End -->
 
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>
