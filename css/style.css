@@ -3118,7 +3118,13 @@ ol {
 .footer__copyright__payment {
 	float: right;
 }
-
+@media(max-width:991px){
+	.footer__copyright{
+		margin-top: -10px;
+		padding-bottom: 65px;
+		margin-bottom: 25px;
+	}
+}
 /*---------------------
   Contact
 -----------------------*/
