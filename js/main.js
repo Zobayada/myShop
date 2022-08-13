@@ -27,6 +27,53 @@ function myFunction() {
     $("body").removeClass("over_hid");
 }
 
+function removeItem() {
+    var item = document.getElementById('item1');
+    var reMove = item.remove('d-none');
+    console.log(reMove);
+}
+function removeItem1() {
+    var item = document.getElementById('item2');
+    var reMove = item.remove('d-none');
+    console.log(reMove);
+}
+function removeItem2() {
+    var item = document.getElementById('item3');
+    var reMove = item.remove('d-none');
+    console.log(reMove);
+}
+
+// $(document).ready(function (e){
+//     $('.remove-item').on('click', function () {
+//         // // $("item1").addClass('d-none');
+//         // item1.remove();
+//     });
+// })
+
+const decrement = (incdec, itemprice) => {
+    var itembal = document.getElementById(incdec);
+    var itemprice = document.getElementById(itemprice);
+    // console.log(itembal.value);
+    if (itembal.value <= 0) {
+        itembal.value = 0;
+    } else {
+        itembal.value = parseInt(itembal.value) - 1;
+    }
+}
+
+const increment = (incdec, itemprice) => {
+    var itembal = document.getElementById(incdec);
+    var itemprice = document.getElementById(itemprice);
+    // console.log(itembal.value);
+    if (itembal.value >= 0) {
+        itembal.value = parseInt(itembal.value) + 1;
+    } else {
+        
+        itemprice.innerHTML = parseInt(itemprice.innerHTML) + 15;
+        product_amt.innerHTML = parseInt(product_amt.innerHTML) + 15;
+    }
+}
+
 (function ($) {
 
     /*------------------

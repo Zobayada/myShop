@@ -135,11 +135,11 @@
             <span class="cart-close" onclick="cartClose()">CLOSE</span>
         </div>
         <div class="cart-body">
-            <div class="cart-order-item">
+            <div class="cart-order-item" id="item1">
                 <div class="quantity">
-                    <button class="plus">+</button>
-                    <span>1</span>
-                    <button class="minus">-</button>
+                    <button class="plus" onclick="increment('textbox','itembal')">+</button>
+                    <input type="text" class="page-link" value="0" id="textbox"></input>
+                    <button class="minus" onclick="decrement('textbox','itembal')">-</button>
                 </div>
                 <div class="picture">
                     <img src="img/product/product-11.jpg" alt="">
@@ -156,16 +156,16 @@
                         <span>৳</span>
                         <span>3.00</span>
                     </div>
-                    <div class="remove-item">
+                    <div class="remove-item" onclick="removeItem()">
                         <i class="fa fa-trash text-danger"></i>
                     </div>
                 </div>
             </div>
-            <div class="cart-order-item">
+            <div class="cart-order-item" id="item2">
                 <div class="quantity">
-                    <button class="plus">+</button>
-                    <span>1</span>
-                    <button class="minus">-</button>
+                    <button class="plus" onclick="increment('textbox1','itembal1')">+</button>
+                    <input type="text" class="page-link" value="1" id="textbox1"></input>
+                    <button class="minus" onclick="decrement('textbox1','itembal1')">-</button>
                 </div>
                 <div class="picture">
                     <img src="img/product/product-11.jpg" alt="">
@@ -182,16 +182,16 @@
                         <span>৳</span>
                         <span>3.00</span>
                     </div>
-                    <div class="remove-item">
+                    <div class="remove-item" onclick="removeItem1()">
                         <i class="fa fa-trash text-danger"></i>
                     </div>
                 </div>
             </div>
-            <div class="cart-order-item">
+            <div class="cart-order-item" id="item3">
                 <div class="quantity">
-                    <button class="plus">+</button>
-                    <span>1</span>
-                    <button class="minus">-</button>
+                    <button class="plus" onclick="increment('textbox2','itembal2')">+</button>
+                    <input type="text" class="page-link" value="0" id="textbox2"></input>
+                    <button class="minus" onclick="decrement('textbox2','itembal2')">-</button>
                 </div>
                 <div class="picture">
                     <img src="img/product/product-11.jpg" alt="">
@@ -208,7 +208,7 @@
                         <span>৳</span>
                         <span>3.00</span>
                     </div>
-                    <div class="remove-item">
+                    <div class="remove-item" onclick="removeItem2()">
                         <i class="fa fa-trash text-danger"></i>
                     </div>
                 </div>
